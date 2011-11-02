@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["support@instedd.org"]
   s.homepage    = "http://bitbucket.org/instedd/platform-common-rails"
   s.summary     = %q{Instedd Platform Common helpers for Rails}
-  s.description = %q{TODO: Write a gem description}
+  s.description = %q{This gem unifies all the helpers and common views used by all Instedd applications}
 
   s.rubyforge_project = "instedd-rails"
 
