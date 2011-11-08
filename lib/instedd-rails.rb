@@ -4,6 +4,7 @@ require "instedd_app_helper"
 require "devise_helper"
 require "mailer_helper"
 require "instedd_rails_engine"
+require "instedd-rails/config"
 
 module Instedd
   module Rails

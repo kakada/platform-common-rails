@@ -31,7 +31,7 @@ module ApplicationHelper
   end
 
   def application_name
-      Rails.application.class.parent_name.titleize
+      Instedd::Rails.config.application_name
   end
 
 end
