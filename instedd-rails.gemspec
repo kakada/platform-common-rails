@@ -4,7 +4,7 @@ require "instedd-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "instedd-rails"
-  s.version     = Instedd::Rails::VERSION
+  s.version     = InsteddRails::VERSION
   s.authors     = ["Instedd"]
   s.email       = ["support@instedd.org"]
   s.homepage    = "http://bitbucket.org/instedd/platform-common-rails"

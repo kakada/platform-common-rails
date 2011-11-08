@@ -1,5 +1,3 @@
-module Instedd
-  module Rails
+module InsteddRails
     VERSION = "0.0.1"
-  end
 end

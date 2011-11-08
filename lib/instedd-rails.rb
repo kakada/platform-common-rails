@@ -1,12 +1,9 @@
 require "instedd-rails/version"
-require "application_helper"
-require "instedd_app_helper"
-require "devise_helper"
-require "mailer_helper"
-require "instedd_rails_engine"
+require "instedd-rails/engine"
 require "instedd-rails/config"
+# require "devise_helper"
+# require "mailer_helper"
 
-module Instedd
-  module Rails
-  end
+module InsteddRails
+
 end
