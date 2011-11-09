@@ -1,6 +1,10 @@
 module InsteddRails
   module MailerHelper
     
+    def application_name
+        InsteddRails.config.application_name
+    end    
+
     def advertised_link name, url
       (link url do
         orange_button do

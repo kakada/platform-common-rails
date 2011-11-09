@@ -38,6 +38,10 @@ module InsteddRails
     def google_analytics
         InsteddRails.config.google_analytics
     end
+
+    def version_name
+      InsteddRails.config.version_name
+    end
     
   end
 end

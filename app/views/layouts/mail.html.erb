@@ -1,6 +1,6 @@
 <%= body do %>
   <%=  header do %>
-    <img src="http://theme.instedd.org/theme/images/header/logos/remindem.png"/>
+    <img src="http://theme.instedd.org/theme/images/header/logos/<%= application_name.underscore %>.png"/>
     <img src="http://theme.instedd.org/theme/images/header/shadow_small.png"/>
   <% end %>
   <%= content do %>
@@ -10,7 +10,7 @@
     <hr/>
     <p>
       Do you have questions or need help? Contact us at
-      <%= link "mailto:support@instedd.org?subject=Remindem" do %>
+      <%= link "mailto:support@instedd.org?subject=#{application_name.titleize}" do %>
         support@instedd.org
       <% end %>
     </p>

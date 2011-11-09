@@ -39,7 +39,7 @@
             </ul>
             <hr/>
             <ul>
-              <li><a href="mailto:support@instedd.org?subject=[remindem-bug]">Report a bug</a></li>
+              <li><a href="mailto:support@instedd.org?subject=[<%= application_name.underscore %>-bug]">Report a bug</a></li>
               <li><%= link_to "Sign Out", destroy_user_session_path %></li>
             </ul>
           </div>
@@ -94,14 +94,14 @@
             <div class="left">
               <a href="http://instedd.org">&copy; 2011 InSTEDD</a>
               <a href="#TODO">Terms and conditions</a>
-              <a href="mailto:support@instedd.org?subject=[remindem]">Contact us</a>
+              <a href="mailto:support@instedd.org?subject=[<%= application_name.titleize %>]">Contact us</a>
             </div>
             <div class="right">
               <a href="<%= root_path %>">Home</a>
               <a href="<%= tour_path(:start) %>">Tour</a>
               <a href="<%= community_path %>">Community</a>
               <a href="<%= help_path %>">Help</a>
-              <span class="VersionNumber">Version <%= RememberMe::Application.config.version_name %></span>
+              <span class="VersionNumber">Version <%= version_name %></span>
             </div>
             <div class="clear">
             </div>
