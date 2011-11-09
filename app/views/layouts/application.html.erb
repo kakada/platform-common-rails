@@ -73,7 +73,7 @@
     
     <div id="container">
 
-      <%= yield %>
+      <%= yield(:content).presence or yield %>
 
     </div>
     
