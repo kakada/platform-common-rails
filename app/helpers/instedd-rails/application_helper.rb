@@ -34,5 +34,10 @@ module InsteddRails
     def application_name
         Instedd::Rails.config.application_name
     end
+
+    def google_analytics
+        Instedd::Rails.config.google_analytics
+    end
+    
   end
 end

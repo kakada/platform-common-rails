@@ -15,9 +15,11 @@ module Instedd
     class Configuration 
       include ActiveSupport::Configurable
       config_accessor :application_name
+      config_accessor :google_analytics
 
       def initialize
         self.application_name = ::Rails.application.class.parent_name.titleize
+        self.google_analytics = ::Rails.application.class.config.google_analytics
       end
     end
 
