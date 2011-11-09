@@ -6,16 +6,16 @@ require File.expand_path("../../../app/helpers/instedd-rails/devise_helper", __F
 module InsteddRails
   class Engine < ::Rails::Engine
     
-    initializer "change the view paths order to prepend devise views" do |app|
+    initializer "change view paths order to prepend devise views" do |app|
       
       application_view_path = ActionController::Base.view_paths.to_a.first
       instedd_rails_view_path = ActionController::Base.view_paths.detect do |path|
         path.to_s.include? "instedd-rails"
       end
-      
+
       ActionController::Base.prepend_view_path instedd_rails_view_path
       ActionController::Base.prepend_view_path application_view_path
-      ActionController::Base.view_paths= ActionController::Base.view_paths.uniq
+      ActionController::Base.view_paths= ActionController::Base.view_paths.uniq.freeze
     end
 
     config.to_prepare do 
