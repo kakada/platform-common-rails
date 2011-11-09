@@ -1,7 +1,7 @@
-require "instedd-rails/version"
-require "instedd-rails/engine"
-require "instedd-rails/config"
-require "instedd-rails/show_exceptions"
+require "instedd_rails/version"
+require "instedd_rails/engine"
+require "instedd_rails/config"
+require "instedd_rails/show_exceptions"
 # require "devise_helper"
 # require "mailer_helper"
 

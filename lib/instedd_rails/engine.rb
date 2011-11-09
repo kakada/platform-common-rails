@@ -1,7 +1,7 @@
-require File.expand_path("../../../app/helpers/instedd-rails/application_helper", __FILE__)
-require File.expand_path("../../../app/helpers/instedd-rails/instedd_app_helper", __FILE__)
-require File.expand_path("../../../app/helpers/instedd-rails/mailer_helper", __FILE__)
-require File.expand_path("../../../app/helpers/instedd-rails/devise_helper", __FILE__)
+require File.expand_path("../../../app/helpers/instedd_rails/application_helper", __FILE__)
+require File.expand_path("../../../app/helpers/instedd_rails/instedd_app_helper", __FILE__)
+require File.expand_path("../../../app/helpers/instedd_rails/mailer_helper", __FILE__)
+require File.expand_path("../../../app/helpers/instedd_rails/devise_helper", __FILE__)
 
 module InsteddRails
   class Engine < ::Rails::Engine
