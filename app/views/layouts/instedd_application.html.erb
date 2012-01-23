@@ -29,10 +29,10 @@
     </div>
         <%= yield(:right_menu) %>
     </div>
-    
+
   <div id="header">
     <div class="left">
-    <a href="/"><%= image_tag "http://theme.instedd.org/theme/images/header/logos/#{application_name.underscore}.png" %></a>
+    <a href="/"><%= image_tag "/images/#{application_name.underscore}.png" %></a>
     </div>
     <% if @show_breadcrum %>
       <div class="BreadCrumb">
@@ -41,13 +41,13 @@
     <% end %>
     <div class="clear"></div>
   </div>
-    
+
     <div id="container">
 
       <%= yield(:content).presence or yield %>
 
     </div>
-    
+
     <div id="footer-span">
       <div id="footer">
         <div id="footer-container">
