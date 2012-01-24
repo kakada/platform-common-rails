@@ -2,9 +2,9 @@ module InsteddRails
   module InsteddAppHelper
     def flash_message
       res = nil
-      
+
       keys = { :notice => 'flash_notice', :error => 'flash_error', :alert => 'flash_error' }
-      
+
       keys.each do |key, value|
         if flash[key]
           html_option = { :class => "flash #{value}" }
@@ -16,16 +16,16 @@ module InsteddRails
           end
         end
       end
-      
+
       res
     end
-    
+
     def errors_for(object, options = {})
       unless object.nil?
         if object.errors.any?
            # TODO change on rails 3.1 to ActiveModel::Naming.param_key(object)
           object_name = options[:as].try(:to_s) || ActiveModel::Naming.singular(object)
-            
+
           content_tag :div, :class => "box error_description #{options[:class] || 'w60'}" do
             (content_tag :h2 do
               "#{pluralize(object.errors.count, 'error')} prohibited this #{object_name.humanize} from being saved:"

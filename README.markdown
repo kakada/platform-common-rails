@@ -13,8 +13,8 @@ Gemfile
 
     gem 'instedd-rails'
 
-Usage
------
+Layout
+------
 
 Your application layout in app/views/layouts/application.html.erb should
 look something like this:
@@ -61,6 +61,9 @@ look something like this:
     <% end %>
     <%= render :file => 'layouts/instedd_application' %>
 
+Breadcrumbs
+-----------
+
 To specify the breadcrumbs, in your controller:
 
     class YourController < ApplicationController
@@ -71,3 +74,13 @@ To specify the breadcrumbs, in your controller:
     end
 
 Read more about the [breadcrumbs\_on\_rails gem](https://github.com/weppos/breadcrumbs_on_rails).
+
+Tabs
+----
+
+To render tabs in the view:
+
+    <ul class="tabs top">
+      <%= tab "Overview", overview_path %>
+      <%= tab "Settings", settings_path %>
+    </ul>
