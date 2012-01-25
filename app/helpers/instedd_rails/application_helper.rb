@@ -1,5 +1,17 @@
 module InsteddRails
   module ApplicationHelper
+    require 'breadcrumbs_on_rails'
+
+    class BreadcrumbBuilder < BreadcrumbsOnRails::Breadcrumbs::Builder
+      def render
+        "<ul>#{@elements.map{|e| "<li>#{item e}</li>"}.join}</ul>"
+      end
+
+      def item element
+        @context.link_to_unless_current(compute_name(element), compute_path(element))
+      end
+    end
+
     def link_button_to(body, url, html_options = {})
       default_options = { :type => 'button', :class => 'white' }
       onclick = "window.location='#{url}';return false;"
