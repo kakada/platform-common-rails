@@ -10,7 +10,7 @@ module ActionDispatch
       rescue
         render_exception_without_template(env, exception)
       end
-      
+
       alias_method_chain :render_exception, :template
   end
 end
