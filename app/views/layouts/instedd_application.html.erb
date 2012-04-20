@@ -9,8 +9,8 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   <% end %>
-  <%= stylesheet_link_tag 'http://theme.instedd.org/theme/stylesheets/theme.css' %>
-  <%= javascript_include_tag 'http://theme.instedd.org/theme/javascripts/theme.js' %>
+  <%= stylesheet_link_tag "#{InsteddRails.url}/theme/stylesheets/theme.css" %>
+  <%= javascript_include_tag "#{InsteddRails.url}/theme/javascripts/theme.js" %>
   <% if Rails::version < '3.1' %>
     <%= stylesheet_link_tag "/stylesheets/#{application_name.underscore}.css" %>
   <% else %>

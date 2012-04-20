@@ -12,5 +12,7 @@ require "instedd_rails/routes"
 # require "mailer_helper"
 
 module InsteddRails
-
+  def self.url
+    ENV["INSTEDD_THEME"] || "http://theme.instedd.org"
+  end
 end
