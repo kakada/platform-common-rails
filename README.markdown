@@ -91,4 +91,4 @@ Using a different URL for the theme
 You can use the INSTEDD\_THEME environment variable to use a different
 url for the theme. For example:
 
-    INSTEDD\_THEME=http://localhost rails s
+    INSTEDD_THEME=http://localhost rails s
