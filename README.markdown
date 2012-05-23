@@ -92,3 +92,10 @@ You can use the INSTEDD\_THEME environment variable to use a different
 url for the theme. For example:
 
     INSTEDD_THEME=http://localhost rails s
+
+If you have the [platform-common](https://bitbucket.org/instedd/platform-common) project checkout out locally you
+can serve it with this command line:
+
+    sudo python -m SimpleHTTPServer 80
+
+(be sure to run <code>rake</code> in that project before serving it)
