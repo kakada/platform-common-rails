@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency("rails", ">= 3.0")
   s.add_dependency("breadcrumbs_on_rails", ">= 2.2.0")
+  s.add_dependency('haml-rails')
 end
