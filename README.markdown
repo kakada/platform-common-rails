@@ -98,4 +98,15 @@ can serve it with this command line:
 
     sudo python -m SimpleHTTPServer 80
 
-(be sure to run <code>rake</code> in that project before serving it)
+(be sure to run `rake` in that project before serving it)
+
+How to develop
+--------------
+
+To make a change to the project without having to commit to check the results,
+you must tell your application to get the gem from your local hard drive.
+This can be done modifying your app's `Gemfile` to point to where you have this gem:
+
+	gem 'instedd-rails', :path => /path/to/this/gem
+
+and then running `bundle install`.
