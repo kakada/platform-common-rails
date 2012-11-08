@@ -18,7 +18,7 @@ module InsteddRails
     config_accessor :version_name
 
     def initialize
-      self.application_name = ::Rails.application.class.parent_name
+      self.application_name = ::Rails.application.class.config.application_name rescue ::Rails.application.class.parent_name
       self.google_analytics = ::Rails.application.class.config.google_analytics
       self.version_name = ::Rails.application.class.config.version_name
     end
