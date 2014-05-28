@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "<%= I18n.locale %>" >
 <head>
   <title><%= application_name.titleize %></title>
   <% if Rails::version < '3.1' %>
@@ -40,11 +40,23 @@
     <div class="left">
     <a href="/"><%= image_tag "#{application_name.underscore}.png" %></a>
     </div>
+
+    <% if @show_language_selector && defined? Locales %>
+      <ul class="right locale-selector">
+        <% Locales.available.each do |key,name|%>
+          <li class=<%= (I18n.locale == key) ? "locale-selectored" : "" %> >
+            <a href= <%='/locale/update?requested_locale='+key.to_s %>> <%= name %> </a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+
     <% if @show_breadcrumb %>
       <div class="BreadCrumb">
         <%= breadcrumb %>
       </div>
     <% end %>
+
     <div class="clear"></div>
   </div>
 
