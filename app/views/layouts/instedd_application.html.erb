@@ -44,7 +44,7 @@
     <% if @show_language_selector && defined? Locales %>
       <ul class="right locale-selector">
         <% Locales.available.each do |key,name|%>
-          <li class=<%= (I18n.locale == key) ? "locale-selectored" : "" %> >
+          <li class=<%= (I18n.locale == key) ? "selected" : "" %> >
             <a href= <%='/locale/update?requested_locale='+key.to_s %>> <%= name %> </a>
           </li>
         <% end %>
