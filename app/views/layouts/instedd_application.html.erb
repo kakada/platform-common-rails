@@ -8,10 +8,9 @@
     <%= stylesheet_link_tag "#{InsteddRails.url}/theme/stylesheets/theme.css" %>
     <%= javascript_include_tag "#{InsteddRails.url}/theme/javascripts/theme.js" %>
   <% else %>
-    <%= javascript_include_tag "jquery-bootstrapper" %>
+    <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag "#{InsteddRails.url}/theme/stylesheets/theme.css" %>
     <%= javascript_include_tag "#{InsteddRails.url}/theme/javascripts/theme.js" %>
-    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   <% end %>
   <% if Rails::version < '3.1' %>
