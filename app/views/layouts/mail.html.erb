@@ -9,7 +9,7 @@
   <%= footer do %>
     <hr/>
     <p>
-      Do you have questions or need help? Contact us at
+      <%= t("do_you_have_questions_or_need_help_contact_us_at", :default => "Do you have questions or need help? Contact us at") %>
       <%= link "mailto:support@instedd.org?subject=#{application_name.titleize}" do %>
         support@instedd.org
       <% end %>

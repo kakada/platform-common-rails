@@ -1,9 +1,9 @@
 <div class ="box centered w50">
   <h1>
     <div class="i48grad-error"></div>
-    We're sorry, but something went wrong
+    <%= t("were_sorry_but_something_went_wrong", :default => "We're sorry, but something went wrong") %>
   </h1>
-  <p>We've been notified about this issue and we'll take a look at it shortly.</p>
+  <p><%= t("weve_been_notified_about_this_issue_and_well_take_a_look_at_it_shortly", :default => "We've been notified about this issue and we'll take a look at it shortly.") %></p>
   <hr/>
-  <%= link_to 'Back', :back, :class =>"button white" %>
+  <%= link_to t("back", :default => 'Back'), :back, :class =>"button white" %>
 </div>

@@ -70,10 +70,11 @@
         <div id="footer-container">
           <div>
             <div class="left platform">
-              InSTEDD has created an evolving platform of free and open source technologies to support humanitarian causes. These tools can be used individually or as building blocks for larger solutions. <a href="http://instedd.org/technologies/">Click here</a> to learn more
+              <%= t("instedd_has_created_an_evolving_platform", default: "InSTEDD has created an evolving platform of free and open source technologies to support humanitarian causes. These tools can be used individually or as building blocks for larger solutions.") %>
+              <%= raw(t("click_here_to_learn_more", default: "%{click_here_link} to learn more") % {click_here_link: "<a href='http://instedd.org/technologies/'>%{click_here}</a>" % {click_here: t("click_here", :default => "Click here")}}) %>
             </div>
             <div class="right">
-              <a href="http://instedd.org/technologies/" class="more">Learn more</a>
+              <a href="http://instedd.org/technologies/" class="more"><%= t("learn_more", :default => "Learn more") %></a>
               <div id="instedd-footer" data-app-name="<%= application_name.underscore %>"></div>
             </div>
             <div class="clear"></div>
@@ -81,8 +82,8 @@
           <div>
             <div class="left">
               <a href="http://instedd.org">&copy; 2011 InSTEDD</a>
-              <a href="<%= terms_and_conditions_path %>">Terms and conditions</a>
-              <a href="mailto:support@instedd.org?subject=[<%= application_name.titleize %>]">Contact us</a>
+              <a href="<%= terms_and_conditions_path %>"><%= t("terms_and_conditions", :default => "Terms and conditions") %></a>
+              <a href="mailto:support@instedd.org?subject=[<%= application_name.titleize %>]"><%= t("contact_us", :default => "Contact us") %></a>
             </div>
             <div class="right">
               <%= yield(:footer_links) %>

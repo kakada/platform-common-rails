@@ -1,8 +1,8 @@
 <%= h1 do %>
-	You are almost done!
+	<%= t("you_are_almost_done", :default => "You are almost done!") %>
 <% end %>
 <%= h2 do %>
-	To verify your account and complete the registration process please click in the link below or copy paste the URL into your browser
+	<%= t("to_verify_your_account_and_complete_the_registration_process_please_click_in_the_link_below_or_copy_paste_the_url_into_your_browser", :default => "To verify your account and complete the registration process please click in the link below or copy paste the URL into your browser") %>
 <% end  %>
 <br/>
-<%= advertised_link 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %>
+<%= advertised_link t("confirm_my_account", default:'Confirm my account'), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %>

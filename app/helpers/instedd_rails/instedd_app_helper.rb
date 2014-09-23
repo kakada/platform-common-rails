@@ -28,7 +28,7 @@ module InsteddRails
 
           content_tag :div, :class => "box error_description #{options[:class] || 'w60'}" do
             (content_tag :h2 do
-              "#{pluralize(object.errors.count, 'error')} prohibited this #{object_name.humanize} from being saved:"
+              t("errors_prohibited_being_saved", default: "%{errors_count} prohibited this %{object_name} from being saved:") % {errors_count: pluralize(object.errors.count, 'error'), object_name: object_name.humanize}
             end) \
             + \
             (content_tag :ul do

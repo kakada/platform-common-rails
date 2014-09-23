@@ -1,8 +1,8 @@
 <% content_for :navigation do %> 
-  <%= section 'Home', root_path, :home %>
-  <%= section 'Tour', tour_path(:start), :tour %>
-  <%= section 'Community', community_path, :community %>
-  <%= section 'Help', help_path , :help %>
+  <%= section t('home', default: 'Home'), root_path, :home %>
+  <%= section t('tour', default: 'Tour'), tour_path(:start), :tour %>
+  <%= section t('community', default: 'Community'), community_path, :community %>
+  <%= section t('help', default: 'Help'), help_path , :help %>
 <% end %>
 <% content_for :right_menu do %> 
   <ul class="RightMenu">
@@ -12,13 +12,13 @@
           <%=current_user.email%><br><br>
           <div class="container">
             <ul>
-              <li><%= link_to 'Reminders', schedules_path %></li>
-              <li><%= link_to 'Settings', edit_user_registration_path %></li>
+              <li><%= link_to t('reminders', default: 'Reminders'), schedules_path %></li>
+              <li><%= link_to t('settings', default: 'Settings'), edit_user_registration_path %></li>
             </ul>
             <hr/>
             <ul>
-              <li><a href="mailto:support@instedd.org?subject=[<%= application_name.underscore %>-bug]">Report a bug</a></li>
-              <li><%= link_to "Sign Out", destroy_user_session_path %></li>
+              <li><a href="mailto:support@instedd.org?subject=[<%= application_name.underscore %>-bug]"><%= t('report_a_bug', default: "Report a bug") %></a></li>
+              <li><%= link_to t('sign_out', default: "Sign Out"), destroy_user_session_path %></li>
             </ul>
           </div>
         </div>
@@ -28,18 +28,18 @@
         </li>
         <% else %>
         <li>
-          <%= link_to "Create account", new_user_registration_path, :class => 'fedit' %>
+          <%= link_to t('create_account', default: "Create account"), new_user_registration_path, :class => 'fedit' %>
         </li>
         <li>
-          <%= link_to "Log in", new_user_session_path, :class => 'fuser' %>
+          <%= link_to t('log_in', default: "Log in"), new_user_session_path, :class => 'fuser' %>
         </li>
         <% end %>
       </ul>
 <% end %>
 <% content_for :footer_links do %> 
-  <a href="<%= root_path %>">Home</a>
-  <a href="<%= tour_path(:start) %>">Tour</a>
-  <a href="<%= community_path %>">Community</a>
-  <a href="<%= help_path %>">Help</a>
+  <a href="<%= root_path %>"><%= t('home', default: 'Home') %></a>
+  <a href="<%= tour_path(:start) %>"><%= t('tour', default: 'Tour') %></a>
+  <a href="<%= community_path %>"><%= t('community', default: 'Community') %></a>
+  <a href="<%= help_path %>"><%= t('help', default: 'Help') %></a>
 <% end %>
 <%= render :file => 'layouts/instedd_application' %>

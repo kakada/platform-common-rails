@@ -3,15 +3,15 @@
 <div class="box centered w30">
 
 <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
-  <h2>Resend confirmation instructions</h2>
+  <h2><%= t("resend_confirmation_instructions", :default => "Resend confirmation instructions") %></h2>
 
   <div class="field w30">
-    <%= f.label :email %>
+    <%= f.label :email, t("email", default: "Email") %>
     <%= f.email_field :email %>
   </div>
 
   <div class="actions">
-    <button type="submit" class="white">Resend confirmation instructions</button>
+    <button type="submit" class="white"><%= t("resend_confirmation_instructions", :default => "Resend confirmation instructions") %></button>
   </div>
 
 <% end %>
@@ -19,4 +19,3 @@
 <%= render :partial => "devise/shared/links" %>
 
 </div>
-
