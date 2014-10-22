@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    instedd-rails (0.0.23)
+    instedd-rails (0.0.24)
       breadcrumbs_on_rails (>= 2.2.0)
       haml-rails
       rails (>= 3.0)
