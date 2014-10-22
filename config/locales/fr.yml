@@ -1,55 +1,55 @@
 fr:
-  already_have_an_account:
-  are_you_sure:
-  back:
-  change_my_password:
-  change_your_password:
-  click_here:
-  click_here_to_learn_more:
-  confirm_my_account:
-  confirm_new_password:
-  contact_us:
-  create_it:
-  current_password:
-  delete_my_account:
-  didnt_receive_confirmation_instructions:
-  didnt_receive_unlock_instructions:
-  do_you_have_questions_or_need_help_contact_us_at:
-  do_you_have_questions_or_need_help_contact_us_at_support_insteddorg:
-  dont_have_an_account:
-  edit_settings:
-  email:
-  errors_prohibited_being_saved:
-  following_errors_ocurred:
-  forgot_your_password:
-  hello_email:
-  home:
-  if_you_didnt_request_this_please_ignore_this_email_your_password_wont_change_until_you_access_the_link_above_and_create_a_new_one:
-  instedd_has_created_an_evolving_platform:
-  learn_more:
-  leave_blank_if_dont_want_to_change:
-  log_in:
-  maybe_you_tried_to_change_something_you_didnt_have_access_to:
-  need_current_password_to_confirm:
-  new_password:
-  password:
-  remember_me:
-  resend_confirmation_instructions:
-  resend_unlock_instructions:
-  reset_it:
-  send_me_reset_password_instructions:
-  sign_in_with_provider:
-  someone_has_requested_a_link_to_change_your_password_and_you_can_do_this_through_the_link_below:
-  terms_and_conditions:
-  the_change_you_wanted_was_rejected:
-  the_page_you_were_looking_for_doesnt_exist:
-  to_verify_your_account_and_complete_the_registration_process_please_click_in_the_link_below_or_copy_paste_the_url_into_your_browser:
-  update:
+  already_have_an_account: "Vous avez déjà un compte?"
+  are_you_sure: "Êtes-vous sûr?"
+  back: "Retourner"
+  change_my_password: "Modifier mon mot de passe"
+  change_your_password: "Changez votre mot de passe"
+  click_here: "Cliquez ici"
+  click_here_to_learn_more: "%{click_here_link} pour plus d'information"
+  confirm_my_account: "Confirmer mon compte"
+  confirm_new_password: "Confirmer le nouveau mot de passe"
+  contact_us: "Contactez-nous"
+  create_it: "Créer"
+  current_password: "mot de passe actuel"
+  delete_my_account: "Supprimer mon compte"
+  didnt_receive_confirmation_instructions: "Vous n'avez pas reçu des instructions pour confirmer votre compte?"
+  didnt_receive_unlock_instructions: "Vous n'avez pas reçu les instructions de déverrouillage?"
+  do_you_have_questions_or_need_help_contact_us_at: "Avez-vous des questions ou besoin d'aide? Contactez-nous à"
+  do_you_have_questions_or_need_help_contact_us_at_support_insteddorg: "Vous avez des questions ou besoin d'aide? Contactez-nous au support@instedd.org"
+  dont_have_an_account: "Vous n'avez pas de compte?"
+  edit_settings: "Modifier les paramètres"
+  email: "Email"
+  errors_prohibited_being_saved: "%{object_name} n'as pas pu être enregistré par %{errors_count} erreurs:"
+  following_errors_ocurred: "Les erreurs suivantes sont survenues"
+  forgot_your_password: "Mot de passe oublié?"
+  hello_email: "Bonjour %{email}!"
+  home: "Page d'accueil"
+  if_you_didnt_request_this_please_ignore_this_email_your_password_wont_change_until_you_access_the_link_above_and_create_a_new_one: "Si vous n'avez pas demandé cela, s'il vous plaît ignorer ce message. Votre mot de passe ne changera pas jusqu'à ce que vous accédez au lien ci-dessus et en créer un nouveau."
+  instedd_has_created_an_evolving_platform: "InSTEDD a créé une plate-forme évolutive de technologies open source et gratuit pour soutenir des causes humanitaires. Ces outils peuvent être utilisés individuellement ou en tant que blocs de construction pour des solutions plus larges."
+  learn_more: "Apprendre encore plus"
+  leave_blank_if_dont_want_to_change: "(laisser vide si vous ne voulez pas le changer)"
+  log_in: "Se connecter"
+  maybe_you_tried_to_change_something_you_didnt_have_access_to: "Peut-être que vous avez essayé de changer quelque chose que vous n'avez pas droits d'accès."
+  need_current_password_to_confirm: "(nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)"
+  new_password: "Nouveaux mot de passe"
+  password: "Mot de passe"
+  remember_me: "Retenir"
+  resend_confirmation_instructions: "Renvoyer les instructions de confirmation"
+  resend_unlock_instructions: "Renvoyer instructions pour déverrouiller"
+  reset_it: "Réinitialiser"
+  send_me_reset_password_instructions: "Envoyez-moi instructions pour changer mon mot de passe"
+  sign_in_with_provider: "Connectez vous avec %{provider}"
+  someone_has_requested_a_link_to_change_your_password_and_you_can_do_this_through_the_link_below: "Quelqu'un a demandé un lien pour changer votre mot de passe, vous pouvez le faire via le lien ci-dessous."
+  terms_and_conditions: "Termes et conditions"
+  the_change_you_wanted_was_rejected: "Le changement que vous vouliez a été rejetée"
+  the_page_you_were_looking_for_doesnt_exist: "La page que vous recherchez n'existe pas"
+  to_verify_your_account_and_complete_the_registration_process_please_click_in_the_link_below_or_copy_paste_the_url_into_your_browser: "Pour vérifier votre compte et terminer le processus d'inscription s'il vous plaît cliquer sur le lien ci-dessous ou copier-coller l'URL dans votre navigateur"
+  update: "Mise à jour"
   views:
     pagination:
-      first:
-      last:
-  were_sorry_but_something_went_wrong:
-  weve_been_notified_about_this_issue_and_well_take_a_look_at_it_shortly:
-  you_are_almost_done:
-  you_may_have_mistyped_the_address_or_the_page_may_have_moved:
+      first: "Premier"
+      last: "Dernier"
+  were_sorry_but_something_went_wrong: "Nous sommes désolés, il y avait un problème"
+  weve_been_notified_about_this_issue_and_well_take_a_look_at_it_shortly: "Nous avons été informés du problème et nous le rechercherons bientôt."
+  you_are_almost_done: "Vous avez presque fini!"
+  you_may_have_mistyped_the_address_or_the_page_may_have_moved: "L'adresse est incorrecte ou la page peut-être a été déplacé ."
