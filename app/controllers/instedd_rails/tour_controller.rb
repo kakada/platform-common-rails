@@ -4,7 +4,7 @@ module InsteddRails
     helper_method :steps
 
     def show
-      render (params[:page] ||= 'start')
+      render (params[:page].to_s ||= 'start')
     end
 
     def steps
