@@ -37,7 +37,7 @@
 
   <div id="header">
     <div class="left">
-    <a href="/"><%= image_tag "#{application_name.underscore}.png" %></a>
+      <%= yield(:app_logo) %>
     </div>
 
     <% if @show_language_selector && defined? Locales %>
@@ -68,17 +68,7 @@
     <div id="footer-span">
       <div id="footer">
         <div id="footer-container">
-          <div>
-            <div class="left platform">
-              <%= t("instedd_has_created_an_evolving_platform", default: "InSTEDD has created an evolving platform of free and open source technologies to support humanitarian causes. These tools can be used individually or as building blocks for larger solutions.") %>
-              <%= raw(t("click_here_to_learn_more", default: "%{click_here_link} to learn more") % {click_here_link: "<a href='http://instedd.org/technologies/'>%{click_here}</a>" % {click_here: t("click_here", :default => "Click here")}}) %>
-            </div>
-            <div class="right">
-              <a href="http://instedd.org/technologies/" class="more"><%= t("learn_more", :default => "Learn more") %></a>
-              <div id="instedd-footer" data-app-name="<%= application_name.underscore %>"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
+          <%= yield(:body_footer) %>
           <div>
             <div class="left">
               <a href="http://instedd.org">&copy; <%= Date.current.year %> InSTEDD</a>
